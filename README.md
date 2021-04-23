@@ -15,7 +15,7 @@ The purpose of this repository is to show an example of how to deploy [Locust IO
 ./run-bicep.sh -p resourcePrefix -s resourceSuffix -g resourceGroupName -l resourceGroupLocation
 ```
 
-Once the script completes we should be able to visit https://{resourcePrefix}mavm{resourceSuffix}.{resourceGroupLocation}.cloudapp.azure.com:8089/ in our web browser and run Locust IO from that point.
+Once the script completes we should be able to visit http://{resourcePrefix}mavm{resourceSuffix}.{resourceGroupLocation}.cloudapp.azure.com:8089/ in our web browser and run Locust IO from that point.
 
 ## Code Description
 
