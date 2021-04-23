@@ -9,7 +9,6 @@ The purpose of this repository is to show an example of how to deploy [Locust IO
 ## Getting Started
 
 1. Clone the repository
-1. Modify 
 1. Run the following command
 
 ``` bash
