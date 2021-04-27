@@ -7,4 +7,4 @@ class MyUser(HttpUser):
     @task
     def index(self):
         id = random.randrange(1, 999999)
-        response = self.client.get("/api/run?loyaltyId={loyaltyId}".format(loyaltyId = str(id).zfill(6)))
+        response = self.client.get("/api/test?id={id}".format(id = str(id).zfill(6)))
