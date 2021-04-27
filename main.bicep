@@ -8,33 +8,6 @@ param sshPublicKey string
 param principalClientId string
 param versionTag string
 
-resource akv 'Microsoft.KeyVault/vaults@2019-09-01' = {
-  name: '${resourcePrefix}akv${resourceSuffix}'
-  location: '${resourceGroupLocation}'
-  properties: {
-      sku: {
-          name: 'standard'
-          family: 'A'
-      }
-      accessPolicies: [
-          {
-              tenantId: subscription().tenantId
-              objectId: currentUserObjectId
-
-              permissions: {
-                  secrets: [
-                      'list'
-                      'get'
-                      'set'
-                  ]
-              }
-          }
-      ]
-      enableSoftDelete: false
-      tenantId: subscription().tenantId
-  }
-}
-
 resource lmainvnet 'Microsoft.Network/virtualNetworks@2020-06-01' = {
   name: '${resourcePrefix}vnet${resourceSuffix}'
   location: '${resourceGroupLocation}'
