@@ -1,4 +1,4 @@
-# Bicep Scale Testing using Locust IO
+# Locust IO Scale Test Harness Built Using Bicep
 
 The purpose of this repository is to show an example of how to deploy [Locust IO](https://locust.io/) on a set of virtual machines using [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/bicep-overview)
 
