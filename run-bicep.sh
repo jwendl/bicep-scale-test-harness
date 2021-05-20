@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e
+set -x
+
 while getopts ":p:s:g:l:" arg; do
     case $arg in
         p) ResourcePrefix=$OPTARG;;
